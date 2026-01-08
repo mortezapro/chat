@@ -2,17 +2,13 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-RUN npm config set registry https://registry.npmjs.org/ && \
-    npm config set fetch-timeout 300000 && \
-    npm config set fetch-retry-mintimeout 30000 && \
-    npm config set fetch-retry-maxtimeout 180000 && \
-    npm config set fetch-retries 5
+RUN npm config set fetch-timeout 600000 && \
+    npm config set fetch-retry-mintimeout 20000 && \
+    npm config set fetch-retry-maxtimeout 120000
 
 COPY package.json ./
 
-RUN npm install --only=production --legacy-peer-deps --no-audit || \
-    (sleep 10 && npm install --only=production --legacy-peer-deps --no-audit) || \
-    (sleep 20 && npm install --only=production --legacy-peer-deps --no-audit)
+RUN npm install --only=production --legacy-peer-deps --no-audit --registry=https://npm.iranrepo.ir/
 
 COPY . .
 
