@@ -2,9 +2,13 @@ FROM node:18-alpine as builder
 
 WORKDIR /app
 
+RUN npm config set fetch-timeout 600000 && \
+    npm config set fetch-retry-mintimeout 20000 && \
+    npm config set fetch-retry-maxtimeout 120000
+
 COPY package.json ./
 
-RUN npm install
+RUN npm install --legacy-peer-deps --no-audit
 
 COPY . .
 

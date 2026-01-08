@@ -46,7 +46,7 @@ VITE_SOCKET_URL=http://your-domain.com:5001
 
 ```bash
 cd /path/to/chat-app
-docker-compose build --no-cache
+docker-compose build
 docker-compose up -d
 ```
 
@@ -72,7 +72,7 @@ docker-compose restart
 
 # به‌روزرسانی (بدون حذف volume)
 git pull
-docker-compose build --no-cache
+docker-compose build
 docker-compose up -d
 
 # حذف فقط containerها (volumeها باقی می‌مانند)
