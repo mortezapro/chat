@@ -1,0 +1,23 @@
+{
+  "name": "چاره",
+  "short_name": "چاره",
+  "description": "پیام‌رسان پیشرفته",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "orientation": "portrait-primary",
+  "icons": [],
+  "categories": ["social", "communication"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "New Chat",
+      "short_name": "New",
+      "description": "ایجاد چت جدید",
+      "url": "/?new=true",
+      "icons": []
+    }
+  ]
+}
+
