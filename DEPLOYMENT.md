@@ -25,7 +25,24 @@ CORS_ORIGIN=http://your-domain.com,https://your-domain.com
 UPLOAD_PATH=./uploads
 ```
 
-## 3. ساخت و اجرا
+## 3. تنظیم متغیرهای محیطی (اختیاری)
+
+اگر نیاز به تغییر URL API دارید، فایل `.env` در root پروژه ایجاد کنید:
+
+```bash
+cd /path/to/chat-app
+nano .env
+```
+
+محتوا:
+```
+JWT_SECRET=your-strong-secret-key-here
+CORS_ORIGIN=http://your-domain.com,https://your-domain.com
+VITE_API_URL=http://your-domain.com:5001/api
+VITE_SOCKET_URL=http://your-domain.com:5001
+```
+
+## 4. ساخت و اجرا
 
 ```bash
 cd /path/to/chat-app
@@ -33,7 +50,7 @@ docker-compose build --no-cache
 docker-compose up -d
 ```
 
-## 4. بررسی وضعیت
+## 5. بررسی وضعیت
 
 ```bash
 docker-compose ps
