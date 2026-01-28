@@ -15,7 +15,7 @@ services:
   backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     container_name: chat-app-backend
     restart: unless-stopped
     ports:
@@ -31,36 +31,24 @@ services:
       - JWT_EXPIRE=7d
       - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost,http://localhost:80}
       - UPLOAD_PATH=./uploads
+
     depends_on:
       - mongodb
     volumes:
-      - ./backend:/app
-      - /app/node_modules
       - ./backend/uploads:/app/uploads
-    command: npm start
     networks:
       - chat-app-network
 
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     container_name: chat-app-frontend
     restart: unless-stopped
     ports:
-      - "80:5173"
-    dns:
-      - 178.22.122.100
-      - 185.51.200.2
-    environment:
-      - VITE_API_URL=${VITE_API_URL:-http://localhost:5001/api}
-      - VITE_SOCKET_URL=${VITE_SOCKET_URL:-http://localhost:5001}
+      - "80:80"
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    command: sh -c "npm run build && npm run preview -- --host 0.0.0.0 --port 5173"
     networks:
       - chat-app-network
 
@@ -70,4 +58,3 @@ networks:
 
 volumes:
   mongodb_data:
-

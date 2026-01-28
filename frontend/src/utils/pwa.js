@@ -42,3 +42,7 @@ export const installApp = async (deferredPrompt) => {
 
 
 
+
+
+
+

@@ -1,0 +1,265 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\gooda\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.3.0
+2 info using node@v23.10.0
+3 silly config load:file:C:\Users\gooda\AppData\Roaming\npm\node_modules\npm\npmrc
+4 info config found workspace root at C:\Users\gooda\OneDrive\Desktop\project\chat-app
+5 silly config load:file:C:\Users\gooda\OneDrive\Desktop\project\chat-app\.npmrc
+6 silly config load:file:C:\Users\gooda\.npmrc
+7 silly config load:file:C:\Users\gooda\AppData\Roaming\npm\etc\npmrc
+8 verbose title npm install
+9 verbose argv "install" "--legacy-peer-deps" "--no-audit" "--registry" "https://npm.arvancloud.ir/" "--cache" "./npm-cache"
+10 verbose logfile logs-max:10 dir:C:\Users\gooda\OneDrive\Desktop\project\chat-app\frontend\npm-cache\_logs\2026-01-21T18_58_24_602Z-
+11 verbose logfile C:\Users\gooda\OneDrive\Desktop\project\chat-app\frontend\npm-cache\_logs\2026-01-21T18_58_24_602Z-debug-0.log
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: frontend
+15 silly idealTree buildDeps
+16 silly reify mark retired [
+16 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\yaml',
+16 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml',
+16 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml.cmd',
+16 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml.ps1'
+16 silly reify ]
+17 silly reify moves {
+17 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\yaml': 'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.yaml-CwbMo18o',
+17 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml': 'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\.yaml-i90stZhk',
+17 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml.cmd': 'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\.yaml.cmd-q1zXNraA',
+17 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\yaml.ps1': 'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\tailwindcss\\node_modules\\.bin\\.yaml.ps1-XYYpmdWG'
+17 silly reify }
+18 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\fsevents
+19 silly reify mark deleted [
+19 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\fsevents'
+19 silly reify ]
+20 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-win32-ia32-msvc
+21 silly reify mark deleted [
+21 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-win32-ia32-msvc'
+21 silly reify ]
+22 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-win32-arm64-msvc
+23 silly reify mark deleted [
+23 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-win32-arm64-msvc'
+23 silly reify ]
+24 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-openharmony-arm64
+25 silly reify mark deleted [
+25 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-openharmony-arm64'
+25 silly reify ]
+26 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-openbsd-x64
+27 silly reify mark deleted [
+27 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-openbsd-x64'
+27 silly reify ]
+28 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-x64-musl
+29 silly reify mark deleted [
+29 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-x64-musl'
+29 silly reify ]
+30 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-x64-gnu
+31 silly reify mark deleted [
+31 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+31 silly reify ]
+32 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-s390x-gnu
+33 silly reify mark deleted [
+33 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-s390x-gnu'
+33 silly reify ]
+34 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-riscv64-musl
+35 silly reify mark deleted [
+35 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-riscv64-musl'
+35 silly reify ]
+36 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-riscv64-gnu
+37 silly reify mark deleted [
+37 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-riscv64-gnu'
+37 silly reify ]
+38 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-ppc64-musl
+39 silly reify mark deleted [
+39 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-ppc64-musl'
+39 silly reify ]
+40 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-ppc64-gnu
+41 silly reify mark deleted [
+41 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-ppc64-gnu'
+41 silly reify ]
+42 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-loong64-musl
+43 silly reify mark deleted [
+43 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-loong64-musl'
+43 silly reify ]
+44 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-loong64-gnu
+45 silly reify mark deleted [
+45 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-loong64-gnu'
+45 silly reify ]
+46 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-arm64-musl
+47 silly reify mark deleted [
+47 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-arm64-musl'
+47 silly reify ]
+48 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-arm64-gnu
+49 silly reify mark deleted [
+49 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-arm64-gnu'
+49 silly reify ]
+50 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-arm-musleabihf
+51 silly reify mark deleted [
+51 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-arm-musleabihf'
+51 silly reify ]
+52 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-linux-arm-gnueabihf
+53 silly reify mark deleted [
+53 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-linux-arm-gnueabihf'
+53 silly reify ]
+54 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-freebsd-x64
+55 silly reify mark deleted [
+55 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-freebsd-x64'
+55 silly reify ]
+56 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-freebsd-arm64
+57 silly reify mark deleted [
+57 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-freebsd-arm64'
+57 silly reify ]
+58 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-darwin-x64
+59 silly reify mark deleted [
+59 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-darwin-x64'
+59 silly reify ]
+60 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-darwin-arm64
+61 silly reify mark deleted [
+61 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-darwin-arm64'
+61 silly reify ]
+62 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-android-arm64
+63 silly reify mark deleted [
+63 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-android-arm64'
+63 silly reify ]
+64 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@rollup\rollup-android-arm-eabi
+65 silly reify mark deleted [
+65 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@rollup\\rollup-android-arm-eabi'
+65 silly reify ]
+66 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\win32-ia32
+67 silly reify mark deleted [
+67 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\win32-ia32'
+67 silly reify ]
+68 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\win32-arm64
+69 silly reify mark deleted [
+69 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\win32-arm64'
+69 silly reify ]
+70 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\sunos-x64
+71 silly reify mark deleted [
+71 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\sunos-x64'
+71 silly reify ]
+72 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\openbsd-x64
+73 silly reify mark deleted [
+73 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\openbsd-x64'
+73 silly reify ]
+74 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\netbsd-x64
+75 silly reify mark deleted [
+75 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\netbsd-x64'
+75 silly reify ]
+76 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-x64
+77 silly reify mark deleted [
+77 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-x64'
+77 silly reify ]
+78 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-s390x
+79 silly reify mark deleted [
+79 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-s390x'
+79 silly reify ]
+80 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-riscv64
+81 silly reify mark deleted [
+81 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-riscv64'
+81 silly reify ]
+82 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-ppc64
+83 silly reify mark deleted [
+83 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-ppc64'
+83 silly reify ]
+84 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-mips64el
+85 silly reify mark deleted [
+85 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-mips64el'
+85 silly reify ]
+86 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-loong64
+87 silly reify mark deleted [
+87 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-loong64'
+87 silly reify ]
+88 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-ia32
+89 silly reify mark deleted [
+89 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-ia32'
+89 silly reify ]
+90 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-arm64
+91 silly reify mark deleted [
+91 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-arm64'
+91 silly reify ]
+92 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\linux-arm
+93 silly reify mark deleted [
+93 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\linux-arm'
+93 silly reify ]
+94 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\freebsd-x64
+95 silly reify mark deleted [
+95 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\freebsd-x64'
+95 silly reify ]
+96 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\freebsd-arm64
+97 silly reify mark deleted [
+97 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\freebsd-arm64'
+97 silly reify ]
+98 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\darwin-x64
+99 silly reify mark deleted [
+99 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\darwin-x64'
+99 silly reify ]
+100 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\darwin-arm64
+101 silly reify mark deleted [
+101 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\darwin-arm64'
+101 silly reify ]
+102 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\android-x64
+103 silly reify mark deleted [
+103 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\android-x64'
+103 silly reify ]
+104 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\android-arm64
+105 silly reify mark deleted [
+105 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\android-arm64'
+105 silly reify ]
+106 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\android-arm
+107 silly reify mark deleted [
+107 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\android-arm'
+107 silly reify ]
+108 verbose reify failed optional dependency C:\Users\gooda\OneDrive\Desktop\project\chat-app\node_modules\@esbuild\aix-ppc64
+109 silly reify mark deleted [
+109 silly reify   'C:\\Users\\gooda\\OneDrive\\Desktop\\project\\chat-app\\node_modules\\@esbuild\\aix-ppc64'
+109 silly reify ]
+110 silly ADD node_modules/fsevents
+111 silly ADD node_modules/@rollup/rollup-win32-ia32-msvc
+112 silly ADD node_modules/@rollup/rollup-win32-arm64-msvc
+113 silly ADD node_modules/@rollup/rollup-openharmony-arm64
+114 silly ADD node_modules/@rollup/rollup-openbsd-x64
+115 silly ADD node_modules/@rollup/rollup-linux-x64-musl
+116 silly ADD node_modules/@rollup/rollup-linux-x64-gnu
+117 silly ADD node_modules/@rollup/rollup-linux-s390x-gnu
+118 silly ADD node_modules/@rollup/rollup-linux-riscv64-musl
+119 silly ADD node_modules/@rollup/rollup-linux-riscv64-gnu
+120 silly ADD node_modules/@rollup/rollup-linux-ppc64-musl
+121 silly ADD node_modules/@rollup/rollup-linux-ppc64-gnu
+122 silly ADD node_modules/@rollup/rollup-linux-loong64-musl
+123 silly ADD node_modules/@rollup/rollup-linux-loong64-gnu
+124 silly ADD node_modules/@rollup/rollup-linux-arm64-musl
+125 silly ADD node_modules/@rollup/rollup-linux-arm64-gnu
+126 silly ADD node_modules/@rollup/rollup-linux-arm-musleabihf
+127 silly ADD node_modules/@rollup/rollup-linux-arm-gnueabihf
+128 silly ADD node_modules/@rollup/rollup-freebsd-x64
+129 silly ADD node_modules/@rollup/rollup-freebsd-arm64
+130 silly ADD node_modules/@rollup/rollup-darwin-x64
+131 silly ADD node_modules/@rollup/rollup-darwin-arm64
+132 silly ADD node_modules/@rollup/rollup-android-arm64
+133 silly ADD node_modules/@rollup/rollup-android-arm-eabi
+134 silly ADD node_modules/@esbuild/win32-ia32
+135 silly ADD node_modules/@esbuild/win32-arm64
+136 silly ADD node_modules/@esbuild/sunos-x64
+137 silly ADD node_modules/@esbuild/openbsd-x64
+138 silly ADD node_modules/@esbuild/netbsd-x64
+139 silly ADD node_modules/@esbuild/linux-x64
+140 silly ADD node_modules/@esbuild/linux-s390x
+141 silly ADD node_modules/@esbuild/linux-riscv64
+142 silly ADD node_modules/@esbuild/linux-ppc64
+143 silly ADD node_modules/@esbuild/linux-mips64el
+144 silly ADD node_modules/@esbuild/linux-loong64
+145 silly ADD node_modules/@esbuild/linux-ia32
+146 silly ADD node_modules/@esbuild/linux-arm64
+147 silly ADD node_modules/@esbuild/linux-arm
+148 silly ADD node_modules/@esbuild/freebsd-x64
+149 silly ADD node_modules/@esbuild/freebsd-arm64
+150 silly ADD node_modules/@esbuild/darwin-x64
+151 silly ADD node_modules/@esbuild/darwin-arm64
+152 silly ADD node_modules/@esbuild/android-x64
+153 silly ADD node_modules/@esbuild/android-arm64
+154 silly ADD node_modules/@esbuild/android-arm
+155 silly ADD node_modules/@esbuild/aix-ppc64
+156 silly REMOVE node_modules/tailwindcss/node_modules/yaml
+157 verbose cwd C:\Users\gooda\OneDrive\Desktop\project\chat-app\frontend
+158 verbose os Windows_NT 10.0.26200
+159 verbose node v23.10.0
+160 verbose npm  v11.3.0
+161 verbose exit 0
+162 info ok

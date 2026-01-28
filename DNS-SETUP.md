@@ -82,3 +82,7 @@ nslookup registry.npmjs.org
 docker exec -it chat-app-backend nslookup registry.npmjs.org
 ```
 
+
+
+
+
