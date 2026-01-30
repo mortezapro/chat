@@ -60,12 +60,12 @@ import channelRoutes from './routes/channels.js';
 
 // Root route - helpful message
 app.get('/', (req, res) => {
-  res.json({
-    message: 'Chat App Backend API',
-    status: 'running',
-    frontend: 'Please access the frontend at http://localhost:5174',
-    api: 'API endpoints are available at /api/*'
-  });
+    res.json({
+        message: 'Chat App Backend API',
+        status: 'running',
+        frontend: 'Please access the frontend at http://localhost:5174',
+        api: 'API endpoints are available at /api/*'
+    });
 });
 
 app.use('/api/auth', authRoutes);

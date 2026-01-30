@@ -1,14 +1,29 @@
 services:
-  mongodb:
-    image: mongo:7
-    container_name: chat-app-mongodb
+  postgres:
+    image: postgres:16-alpine
+    container_name: chat-app-postgres
+    hostname: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ferretdb
+      POSTGRES_PASSWORD: ferretdb
+      POSTGRES_DB: ferretdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - chat-app-network
+
+  ferretdb:
+    image: ghcr.io/ferretdb/ferretdb:1
+    container_name: chat-app-ferretdb
+    hostname: ferretdb
     restart: unless-stopped
     ports:
       - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
     environment:
-      MONGO_INITDB_DATABASE: chat-app
+      FERRETDB_POSTGRESQL_URL: postgres://ferretdb:ferretdb@postgres:5432/ferretdb
+    depends_on:
+      - postgres
     networks:
       - chat-app-network
 
@@ -20,20 +35,17 @@ services:
     restart: unless-stopped
     ports:
       - "5001:5000"
-    dns:
-      - 178.22.122.100
-      - 185.51.200.2
+    depends_on:
+      - ferretdb
     environment:
       - NODE_ENV=production
       - PORT=5000
-      - MONGODB_URI=mongodb://mongodb:27017/chat-app
-      - JWT_SECRET=${JWT_SECRET:-your-secret-key-change-in-production}
+      - MONGODB_URI=mongodb://ferretdb:27017/chat-app
+      - JWT_SECRET=Rk4pZs3uJ9!vQ2@xD7#Lm8&bT5^Nc1K
       - JWT_EXPIRE=7d
       - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost,http://localhost:80}
       - UPLOAD_PATH=./uploads
 
-    depends_on:
-      - mongodb
     volumes:
       - ./backend/uploads:/app/uploads
     networks:
@@ -57,4 +69,4 @@ networks:
     driver: bridge
 
 volumes:
-  mongodb_data:
+  postgres_data:
